@@ -16,7 +16,9 @@ ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 ```
 4) Install Homebrew, followed by the software listed in the Brewfile
 ```sh
-cd /opt && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle --file ~/.dotfiles/Brewfile
 cd ~/.dotfiles && brew bundle
 ```

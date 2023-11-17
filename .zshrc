@@ -1,5 +1,5 @@
 # adding homebrew to path
-export PATH="$PATH:/opt/homebrew/bin/"
+export PATH="/opt/homebrew/bin:$PATH"
 
 # aliases
 alias cls="clear"
